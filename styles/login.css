@@ -1,0 +1,138 @@
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    font-weight: 700;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+html {
+    background-color:burlywood;
+
+}
+
+
+
+.header , .footer{
+    background-color: #10477a;
+    height: 10%;
+    text-align: center;
+}
+
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-style: solid;
+    border-color: white;
+    border-radius: 25px;
+    backdrop-filter: blur(4px);
+
+}
+
+.login {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.sep{
+    background-color: white;
+    width: 3.33px;
+}
+
+.switch{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    margin-right: 10px;
+}
+
+.title{
+   margin: 1%;
+}
+
+.login .title{
+    margin-top: 10px;
+    margin-bottom: 17.5px;
+}
+
+.switch .title{
+    margin: 10px;
+}
+
+.myform {
+    display: flex;
+    flex-direction: column;
+}
+
+.eachform {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    justify-content: space-around;
+}
+
+.end{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+input[type=text], input[type=password] {
+    font-size: 17.5px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    width: 80%;
+    border-radius: 80px;
+    border-style: none;
+    padding: 0px 15px;
+    margin: 10px;
+}
+
+button {
+    margin: 5px;
+    border-style: none;
+    border-radius: 25px ;
+    width: 100%;
+    max-width: fit-content;
+    padding: 10px;
+}
+button p{
+    font-size: 17.5px;
+    color: black;
+    font-weight: 500;
+
+}
+
+#switchbutton:focus ~ .box{
+    flex-direction: row-reverse;
+    background-color: #10477a;
+}
+
+button:focus{
+    background-color: aqua;
+}
+
+
+
