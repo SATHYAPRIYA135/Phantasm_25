@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <title>Login Phantasm 25</title>
-    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./assets/styles/login.css">
 </head>
 <body>
     <div class="header">Header</div>
     <div class="page">
-        <div class="box">
-            <div class="login">
-                <div class="title">
+        <div id="box">
+            <div class="login" >
+                <div class="title" id="login-title">
                     <p>LOGIN FOR PARTICIPANTS</p>
                 </div> 
                 <div class="form">
@@ -38,8 +38,9 @@
             <div class="sep"></div>
             <div class="switch">
                 <div class="title">
-                    <p>LOGIN FOR ADMINS</p>
-                </div> 
+                    <p id="switch-title">LOGIN FOR ADMINS</p>
+                </div>
+                <button onclick="switchLogin()"><p>SWITCH</p></button> 
             </div>
         </div>
     </div>
@@ -47,5 +48,7 @@
     <div class="footer">
         Footer
     </div>
+
+    <script src="./assets/scripts/login.js"></script>
 </body>
 </html>
