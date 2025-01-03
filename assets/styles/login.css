@@ -1,5 +1,5 @@
 * {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: "Space Mono", serif;
     color: white;
     font-weight: 700;
     padding: 0px;
@@ -10,13 +10,14 @@
 html {
     background-image: url("../images/bg1.jpg");
     background-size:auto;
+    background-color: antiquewhite;
 }
 
 
 
 .header , .footer{
-    background:rgba(0,0,0,0.5);
-    height: 9vh;
+    background:rgba(0,0,0,0.33);
+    height: 10vh;
     text-align: center;
     backdrop-filter: blur(10px);
 }
@@ -25,46 +26,40 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 82vh;
+    height: 80vh;
 }
 
 #box{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     border-style: none;
-    backdrop-filter: blur(10px);
-    transition: 1000ms;
-    max-width: fit-content;
-    transition-timing-function:ease-in-out ;
-
+    backdrop-filter: blur(50px);
+    width: fit-content;
+    border-radius: 8px;
+    margin: 5px;
 }
 
 .login {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0vw 2vw 0vw 2vw;
+    width: auto;
+    background: repeating-linear-gradient( 45deg,rgba(0,0,0,0.5), rgba(0,0,0,0.5) 5px, #071252 5px, #029297 25px );
+    border-radius: 8px 0px 0px 8px;
 }
 
-.sep{
-    background-color: black;
-    opacity: 0.45;
-    width: 3.5px;
-    margin: 0 15px 0 15px;
-}
 
 .switch{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content:center;
-    width: 20%;
-    margin: 0vw 2vw 0vw 2vw;
+    border-radius: 0px 8px 8px 0px;
+    background: repeating-linear-gradient( -45deg, rgba(255,255,255,.5), rgba(255,255,255,1) 5px, #b9f9fc 5px,#575e86 25px);
 }
 
 .title{
    margin: 30vh 0vh 0vh 0vh;
+   font-weight: 700;
 }
 
 .login .title{
@@ -72,9 +67,12 @@ html {
     margin-bottom: 17.5px;
 }
 
-.switch .title {
-    margin: 10px;
+ #switch-title{
+    writing-mode: vertical-lr;
+    padding: 0px 10px 0px 10px;
+    color: black;
 }
+
 
 .myform {
     display: flex;
@@ -85,6 +83,7 @@ html {
     display: flex;
     flex-direction: column;
     margin: 8px;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -96,12 +95,9 @@ html {
 p {
     font-size: 19px;
     font-weight: 500;
-    text-align: center;
+    text-align:center;
     max-width: 100%;
     
-}
-#switch-title{
-    font-size: 16px;
 }
 
 
@@ -115,7 +111,6 @@ input[type=text], input[type=password] {
     border-radius: 80px;
     border-style: none;
     padding: 0px 15px;
-    margin: 10px;
 }
 
 button {
@@ -123,11 +118,11 @@ button {
     border-style: none;
     border-radius: 25px ;
     width: 100%;
-    max-width: fit-content;
+    max-width: min-content;
     padding: 10px;
 }
 button p{
-    font-size: 15.5px;
+    font-size: 17.5px;
     color: black;
     font-weight: 500;
 
@@ -135,9 +130,7 @@ button p{
 
 
 
-.switch:focus >.box{
-    background-color: aqua;
-}
+
 
 
 

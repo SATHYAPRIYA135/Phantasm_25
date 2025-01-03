@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <title>Login Phantasm 25</title>
     <link rel="stylesheet" href="./assets/styles/login.css">
 </head>
@@ -10,9 +13,9 @@
     <div class="header">Header</div>
     <div class="page">
         <div id="box">
-            <div class="login" >
+            <div class="login" id="login" >
                 <div class="title" id="login-title">
-                    <p>LOGIN FOR PARTICIPANTS</p>
+                    <p>Login For Participants</p>
                 </div> 
                 <div class="form">
                     <form class="myform">
@@ -35,12 +38,9 @@
                     <button><p>LOGIN</p></button>
                 </form>
             </div>
-            <div class="sep"></div>
-            <div class="switch">
-                <div class="title">
-                    <p id="switch-title">LOGIN FOR ADMINS</p>
-                </div>
-                <button onclick="switchLogin()"><p>SWITCH</p></button> 
+            
+            <div class="switch" onclick="switchLogin()"  id="switch">
+                <p id="switch-title" >Login For Admins</p>
             </div>
         </div>
     </div>
