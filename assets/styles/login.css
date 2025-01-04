@@ -35,7 +35,6 @@ html {
     justify-content: center;
     border-style: none;
     backdrop-filter: blur(50px);
-    width: fit-content;
     border-radius: 8px;
     margin: 5px;
 }
