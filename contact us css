@@ -1,0 +1,117 @@
+body{
+  background-image: url('imagesa.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.mapp{
+  top: 55%;
+  position:absolute;
+  margin: 2px;
+  left: 35%;
+  
+
+ }
+ .com{
+  left: 5%;
+  top: 50px;
+  color: azure;
+
+
+ }
+ .ro{
+  color: aliceblue;
+  position: absolute;
+  bottom: -70px;
+ }
+ .new {
+ color: black;
+   margin: 2px;
+   border: 50px;
+   color: aliceblue;
+   position: absolute;
+   top: 55%;
+   left: 30%;
+ }
+ .popup-box {
+   background-color: white;
+   height: 200px;
+   width: 110px;
+   padding: 40px;
+   border-radius: 10px;
+   position: absolute;
+   top: 100px;
+   left: 100px;
+   z-index: 2;
+   display: block;
+ }
+ .popup-boxa {
+  background-color: white;
+  height: 200px;
+  width: 110px;
+  padding: 40px;
+  border-radius: 10px;
+  position: absolute;
+  top: 100px;
+  left: 500px;
+  z-index: 3;
+  display: block;
+ }
+ .popup-boxb {
+  background-color: white;
+  height: 200px;
+  width: 110px;
+  padding: 40px;
+  border-radius: 10px;
+  position: absolute;
+  left:850px;
+  top: 100px;
+  z-index: 4;
+  display: block;
+ }
+ .popup-boxc {
+  background-color: white;
+  height: 200px;
+  width: 110px;
+  padding: 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 1250px;
+  top: 100px;
+  z-index: 5;
+  display: block;
+ }
+
+ .domn{
+  position:absolute;
+  color: aliceblue;
+  bottom: -35%;
+  left: 0%;
+  right: 0%;
+  text-align:center;
+ }
+ .salem{
+  position: absolute;
+  color: aliceblue;
+  bottom: -150px;
+  left: 100px;
+ }
+ .chennai{
+  position: absolute;
+  color: aliceblue;
+  bottom: -150px;
+  left: 500px;
+ }
+ .bengaluru{
+  position: absolute;
+  color: aliceblue;
+  bottom: -150px;
+  left:859px ;
+ }
+ .thiruppathur{
+  position: absolute;
+  bottom: -150px;
+  color: aliceblue;
+  left:1250px ;
+ }
+ 
