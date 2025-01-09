@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>my website</title>
+</head>
+<body>
+  <iframe
+  class="mapp"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.5252160744144!2d78.32984797506931!3d12.547581087730197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac4ad3c72b0051%3A0x121c6c71d83706b5!2sGovernment%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1735819048722!5m2!1sen!2sin"
+    width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  <div class="new">
+    <h3>MAP</h3> 
+</div>
+<div CLASS="com">
+  <u><h3>INTER COLLEGE COMMITTE:</h3></u>
+</div>
+<div class="ro">
+ <H3>ROUTE</H3> 
+</div>
+  <div class="popup-box">
+    <u>
+    <h3>software commite</h3>
+    </u>
+      Aravinth:4584383<br><br>
+      Aravinth@12890<br><br>
+  
+  </div>
+  <div class="popup-boxa">
+    <u>
+    <h3>technical committe:</h3>
+    </u>
+      deva:1234589<br><br>
+      deva@1237890<br><br>
+    
+  </div>
+  <div class="popup-boxb">
+    <u>
+    <h3>network committe:</h3>
+    </u>
+      deva:1234789<br><br>
+      deva@1234560<br><br>
+    
+  </div>
+  <div class="popup-boxc">
+    <u>
+    <h3>design committe:</h3>
+    </u>
+      deva:12345<br><br>
+      deva@66777<br><br>
 
+  </div>
+  <div class="salem">
+    <h3>Salem to College</h3>
+    <ul>
+      <li>salem to krishnagiri</li>
+      <li>krishnagir to bargur</li>
+    </ul>
+  </div>
+  <div class="thiruppathur">
+    <h3>Thiruppathur to College</h3>
+    <ul>
+      <li>thiruppathur to bargur</li>
+    </ul>
+  </div>
+  <div class="chennai">
+    <h3>Chennai to College</h3>
+    <ul>
+      <li>chennai to krishnagiri</li>
+      <li>krishnagir to bargur</li>
+    </ul>
+  </div>
+  <div class="bengaluru">
+    <h3>Bengaluru to College</h3>
+    <ul>
+      <li>bengaluru to krishnagiri</li>
+      <li>krishnagir to bargur</li>
+    </ul>
+  </div>
+  <div class ="domn">
+<hr>
+&copy ALL OF THE RIGHTS RESERVED
+  </div>
+</body>
+</html>
