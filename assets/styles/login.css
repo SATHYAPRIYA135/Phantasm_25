@@ -1,32 +1,42 @@
+@property --bgcolor1 {
+    syntax: '<color>';
+    initial-value: #3ab890;
+    inherits: false;
+}
+@property --bgcolor2 {
+    syntax: '<color>';
+    initial-value: #165391;
+    inherits: false;
+}
 * {
-    font-family: "Space Mono", serif;
+    font-family: "JetBrains Mono", serif;
+    font-optical-sizing: auto;
     color: white;
-    font-weight: 700;
     padding: 0px;
     margin: 0px;
 }
 
-
 html {
-    background-image: url("../images/bg1.jpg");
-    background-size:auto;
-    background-color: antiquewhite;
+    background-image: url("../images/bg-login.jpg");
+    background-size:cover;
 }
 
-
-
-.header , .footer{
-    background:rgba(0,0,0,0.33);
-    height: 10vh;
-    text-align: center;
-    backdrop-filter: blur(10px);
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 .page{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    min-height: 84vh;
+    min-height: 84dvh;
+    background-image: repeating-radial-gradient(
+      circle at 50% 50%,
+      transparent 0,
+      #1414148a 4px
+    )
 }
 
 #box{
@@ -35,101 +45,146 @@ html {
     justify-content: center;
     border-style: none;
     backdrop-filter: blur(50px);
-    border-radius: 8px;
-    margin: 5px;
+    max-width: 90vw;
+    transition: all 1s ease-out;
+    
 }
 
 .login {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: auto;
-    background: repeating-linear-gradient( 45deg,rgba(0,0,0,0.5), rgba(0,0,0,0.5) 5px, #071252 5px, #029297 25px );
-    border-radius: 8px 0px 0px 8px;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+    color: var(--darktxt);
+    background-image: repeating-linear-gradient( 45deg,#1e1e2e,#0b1620 4px, var(--bgcolor2) 5px, var(--bgcolor1) 25px );
+}
+.login{
+    -webkit-transition:--bgcolor1, --bgcolor2  .5s ease-in-out;
+  transition: --bgcolor1, --bgcolor2  .5s ease-in-out;
+
 }
 
+.login:hover{
+    --bgcolor1: #c31432;
+    --bgcolor2: #240b36;
+}
+
+
+@property --bgcolor3 {
+    syntax: '<color>';
+    initial-value: #b5b5f1;
+    inherits: false;
+}
+@property --bgcolor4 {
+    syntax: '<color>';
+    initial-value: #e2edf7;
+    inherits: false;
+}
+@property --bgcolor5 {
+    syntax: '<color>';
+    initial-value: #b9f9fc;
+    inherits: false;
+}
+@property --bgcolor6 {
+    syntax: '<color>';
+    initial-value: #575e86 ;
+    inherits: false;
+}
 
 .switch{
     display: flex;
     align-items: center;
-    border-radius: 0px 8px 8px 0px;
-    background: repeating-linear-gradient( -45deg, rgba(255,255,255,.5), rgba(255,255,255,1) 5px, #b9f9fc 5px,#575e86 25px);
+    background-image: repeating-linear-gradient( -45deg,var(--bgcolor3) 2px, var(--bgcolor4) 2px, var(--bgcolor5) 5px,var(--bgcolor6) 25px);
 }
 
-.title{
-   margin: 30vh 0vh 0vh 0vh;
-   font-weight: 700;
+.switch{
+    -webkit-transition:--bgcolor3, --bgcolor4,--bgcolor5, --bgcolor6  .6s ease-in-out;
+  transition: --bgcolor3, --bgcolor4,--bgcolor5, --bgcolor6  .6s ease-in-out;
+
 }
 
-.login .title{
-    margin-top: 20px;
-    margin-bottom: 17.5px;
+#switch-title{
+    -webkit-transition: color .7s ease-in-out;
+  transition: color .7s ease-in;
+
 }
 
- #switch-title{
+.switch:hover{
+    cursor: pointer;
+    --bacolor3:#1e1e2e;
+    --bgcolor4:#0b1620;
+    --bgcolor5: #c31432;
+    --bgcolor6: #240b36;
+}
+
+.switch:hover > #switch-title{
+    color: #eff1f5;
+}
+
+
+
+#login-title {
+    margin: 0 1rem 0 1rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+
+.title p{
+    font-weight: 600;
+    font-size: clamp(1.65rem, 4.2vw, 2.7rem);
+}
+#switch-title{
+    font-size: clamp(1.6rem, 4.2vw, 2.65rem);
+    font-weight: 500;
     writing-mode: vertical-lr;
-    padding: 0px 10px 0px 10px;
+    margin: 1rem;
     color: black;
+}
+.form p{
+    margin: .9rem;
+    font-weight: 500;
+    font-size: clamp(1.49rem,3.8vw,2.0rem);
 }
 
 
 .myform {
+    margin: 1rem;
     display: flex;
     flex-direction: column;
 }
+
 
 .eachform {
     display: flex;
     flex-direction: column;
-    margin: 8px;
     align-items: center;
     justify-content: space-around;
+    flex-grow: 1;
 }
 
 .end{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 p {
-    font-size: 19px;
-    font-weight: 500;
     text-align:center;
-    max-width: 100%;
-    
 }
 
 
 
 input[type=text], input[type=password] {
-    font-size: 17.5px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.33rem,3.8vw,1.75rem);
     color: black;
-    font-weight: 500;
     text-align: center;
-    width: 80%;
-    border-radius: 80px;
+    width: 70%;
     border-style: none;
     padding: 0px 15px;
 }
-
-button {
-    margin: 5px;
-    border-style: none;
-    border-radius: 25px ;
-    width: 100%;
-    max-width: min-content;
-    padding: 10px;
-}
-button p{
-    font-size: 17.5px;
-    color: black;
-    font-weight: 500;
-
-}
-
-
-
-
-
-
-

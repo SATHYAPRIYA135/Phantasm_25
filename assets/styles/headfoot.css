@@ -1,0 +1,64 @@
+.header , .footer{
+    background:rgba(0, 0, 0, 0.25);
+    height: 8vh;
+    height: 8dvh;
+    width: 100vw;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+
+.header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    font-size: clamp(1.49rem,3.8vw,2.0rem);
+    font-weight: 600;
+    margin: 0 10px 0 10px;
+}
+.header nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 0 10px;
+}
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 clamp(.2rem,1vw,.9rem);
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    transition: color,background-color .75s;
+    padding : 5px;
+}
+.header nav a:hover {
+    color: black;
+    background-color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: clamp(.5rem,2vw, 1.15rem);
+    font-weight: 600;
+}
+.footer a {
+    color: #fdd02d;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}

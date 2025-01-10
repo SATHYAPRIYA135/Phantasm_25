@@ -2,20 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-    <title>Login Phantasm 25</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+
+    <title>Login Phantasm'25</title>
     <link rel="stylesheet" href="./assets/styles/login.css">
+    <link rel="stylesheet" href="./assets/styles/button.css">
+    <link rel="stylesheet" href="./assets/styles/headfoot.css">
 </head>
 <body>
-    <div class="header">Header</div>
+    <div class="header">
+        <div class="logo">Phantasm'25</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#events">Events</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#contact">Contact</a>
+            <a href="#login">Login</a>
+        </nav>
+    </div>
     <div class="page">
-        <div id="box">
+        <div id="box" class="animated-button2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
             <div class="login" id="login" >
                 <div class="title" id="login-title">
-                    <p>Login For Participants</p>
+                    <p class="animated-button">Login For Participants</p>
                 </div> 
                 <div class="form">
                     <form class="myform">
@@ -35,7 +53,13 @@
                 </div>
                 
                 <form class="end">
-                    <button><p>LOGIN</p></button>
+                    <button class="animated-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        LOGIN
+                    </button>
                 </form>
             </div>
             
@@ -45,8 +69,9 @@
         </div>
     </div>
 
-    <div class="footer">
-        Footer
+    <div class="footer">    
+        <p>&copy; 2025 CSEA. All rights reserved.</p>
+        <p>Follow us on <a href="#">Instagram</a>, <a href="#">Facebook</a>, and <a href="#">Twitter</a>.</p>
     </div>
 
     <script src="./assets/scripts/login.js"></script>
