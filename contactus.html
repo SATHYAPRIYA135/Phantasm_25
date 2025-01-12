@@ -4,28 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phantasm'25</title>
-    <!-- Font Awesome CDN for social media icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-<link rel="stylesheet" href="inputs.css">
+    <link rel="stylesheet" href="inputs.css">
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
 
-        /* Header should fit the full width and fixed height */
         header {
             background-color: #1a237e;
             color: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 100%; /* Make sure header spans full width */
-            height: 60px; /* Fixed height for the header */
-            padding: 0 20px; /* Ensure proper padding from left and right */
-            box-sizing: border-box; /* Include padding in the header height */
-            position: relative; /* Allow positioning of other elements inside */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+            width: 100%; 
+            height: 60px; 
+            padding: 0 20px; 
+            box-sizing: border-box; 
+            position: relative; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
         }
 
         /* Logo in the header */
@@ -58,7 +56,7 @@
         .side-menu {
             position: fixed;
             top: 0;
-            right: -250px; /* Initially off-screen */
+            right: -250px;
             width: 250px;
             height: 100%;
             background-color: white;
@@ -97,7 +95,7 @@
             color: #ffeb3b;
         }
 
-        /* Footer styling */
+        /* Footer style */
         footer {
             background-color: #1a237e;
             color: white;
@@ -123,7 +121,7 @@
             text-decoration: underline;
         }
 
-        /* Hamburger icon styles */
+        /* Hamburger icon style */
         .hamburger {
             display: none;
             cursor: pointer;
@@ -144,11 +142,11 @@
             header {
                 flex-direction: row;
                 justify-content: space-between;
-                height: 60px; /* Ensure header stays at 60px height */
+                height: 60px; 
             }
 
             header nav {
-                display: none; /* Hide the regular navbar on mobile */
+                display: none; 
             }
 
             /* Show hamburger icon */
@@ -166,12 +164,12 @@
 
             /* Initially hide the side menu */
             .side-menu {
-                right: -500px; /* Side menu is off-screen */
+                right: -500px;
             }
 
             /* Show the side menu when it's toggled */
             .side-menu.open {
-                right: -50px; /* Slide the side menu in */
+                right: -50px; 
             }
 
             .side-menu a {
@@ -182,11 +180,11 @@
         /* Desktop version - regular navigation bar */
         @media (min-width: 769px) {
             .side-menu {
-                display: none; /* Hide the side menu on desktop */
+                display: none; 
             }
 
             header nav {
-                display: flex; /* Keep the navigation bar on desktop */
+                display: flex; 
             }
         }
 .p_tag{ padding-top:20px;}
@@ -214,7 +212,7 @@
 
 <!-- Side menu -->
 <div class="side-menu" id="sideMenu">
-    <span class="close-btn" onclick="closeMenu()">&times;</span> <!-- X mark to close the menu -->
+    <span class="close-btn" onclick="closeMenu()">&times;</span> 
 <p id="p_tag"></p>
 <div id="p_tag1"></div>
     <a href="#about">About</a>
@@ -304,8 +302,11 @@
 <footer>
     <p>&copy; 2025 CSEA. All rights reserved.</p>
     <div class="social-icons">
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        Follow us on:<br>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>&nbsp;
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>&nbsp;
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>&nbsp;
+        
     </div>
 </footer>
 
@@ -313,13 +314,13 @@
     // Function to toggle the side menu visibility
     function toggleMenu() {
         const menu = document.getElementById('sideMenu');
-        menu.classList.toggle('open'); // Toggle the open class to show/hide menu
+        menu.classList.toggle('open'); 
     }
 
     // Function to close the side menu
     function closeMenu() {
         const menu = document.getElementById('sideMenu');
-        menu.classList.remove('open'); // Remove the open class to hide menu
+        menu.classList.remove('open'); 
     }
 </script>
 
