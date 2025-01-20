@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+
+    <title>Login Phantasm'25</title>
+    <link rel="stylesheet" href="./assets/styles/login.css">
+    <link rel="stylesheet" href="./assets/styles/button.css">
+    <!-- <link rel="stylesheet" href="./assets/styles/headfoot.css"> -->
+    <style>
+        
+        /* header and nav bar slide in  */
+        /* header {
+            transform: translateY(-100%);
+            animation: slideDown 1.2s ease-in-out forwards;
+        }
+
+        @keyframes slideDown {
+            to {
+                transform: translateY(0);
+            }
+        } */
+
+        /* fade-in page transition  */
+        .page {
+    opacity: 0;
+    animation: fadeIn 2.5s ease-in-out forwards;
+            }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0.2;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            position: relative;
+            background: url('Sky.jpg') no-repeat center center / cover;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            overflow: hidden;
+        }
+        header {
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            z-index: 2;
+        }
+        header nav {
+            display: flex;
+            gap: 15px;
+            position: relative;
+            z-index: 2;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #000000;
+        }
+        .ripple {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: ripple-animation 4s infinite;
+            opacity: 0;
+            z-index: 0;
+        }
+        footer {
+            color: black;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: auto;
+            padding: 10px 0;
+        }
+        footer p {
+            margin: 5px 0;
+            z-index: 10;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: black;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .page {
+            flex: 1;
+        }
+        @keyframes ripple-animation {
+            0% {
+                transform: scale(0);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        <div class="logo">Phantasm'25</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#events">Events</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#contact">Contact</a>
+            <a href="#login">Login</a>
+        </nav>
+    </header>
+    <div class="page">
+        <div id="box" class="animated-button2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <div class="login" id="login" >
+                <div class="title" id="login-title">
+                    <p class="animated-button">Login For Participants</p>
+                </div> 
+                <div class="form">
+                    <form class="myform">
+                        <div class="eachform">
+                            <label for="username">
+                                <p>Enter Your Username:</p>
+                            </label>
+                            <input type="text" id="username" name="username">
+                        </div>
+                        <div class="eachform">
+                            <label for="pass">
+                                <p>Enter Password:</p>
+                            </label>
+                            <input type="password" id="pass" name="pass" >
+                        </div>
+                    </form>
+                </div>
+                
+                <form class="end">
+                    <button class="animated-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        LOGIN
+                    </button>
+                </form>
+            </div>
+            
+            <div class="switch" onclick="switchLogin()"  id="switch">
+                <p id="switch-title" >Login For Admins</p>
+            </div>
+        </div>
+    </div>
+
+<footer id="footer">
+    <div class="ripple"></div>
+    <div class="ripple"></div>
+    <div class="ripple"></div>
+    <p>&copy; 2025 CSEA. All rights reserved.</p>
+    <p>Follow us on</p>
+    <p>
+        <a href="#">Instagram</a>, <a href="#">Facebook</a>, and <a href="#">Twitter</a>.
+    </p>
+</footer>
+
+<script>
+    // Function to add ripple effect to a given element
+    function addRippleEffect(element) {
+        setInterval(() => {
+            const ripple = document.createElement('div');
+            ripple.className = 'ripple';
+            ripple.style.left = `${Math.random() * 100}%`;
+            ripple.style.top = `${Math.random() * 100}%`;
+            element.appendChild(ripple);
+            setTimeout(() => ripple.remove(), 4000); // Remove the ripple after animation
+        }, 1000);
+    }
+
+    // Add ripple effect to header and footer
+    const header = document.querySelector('header');
+    const footer = document.querySelector('footer');
+    addRippleEffect(header);
+    addRippleEffect(footer);
+</script>
+    <script src="./assets/scripts/login.js"></script>
+</body>
+</html>
